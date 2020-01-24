@@ -1,6 +1,9 @@
 <template>
   <div class="section-title text-center mb-16">
-    <h2 class="inline-block">About us</h2>
+    <h2 class="inline-block uppercase mb-8 font-light text-titlecolor">
+      {{ titletext }}
+    </h2>
+    <p>We are good at what we do.</p>
   </div>
 </template>
 
@@ -11,4 +14,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.section-title p {
+  @apply text-3xl text-textcolor;
+}
+</style>

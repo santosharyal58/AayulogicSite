@@ -1,9 +1,9 @@
 <template>
   <div class="about-us py-40">
     <div class="container">
-      <Title></Title>
-      <div class="aboutus-wrap flex w-full">
-        <div class="aboutus-text xl:w-1/2 ">
+      <Title titletext="About Us"></Title>
+      <div class="aboutus-wrap flex flex-wrap w-full">
+        <div class="aboutus-text px-4 xl:w-1/2">
           <p>
             We're a team of passionate people who make use of excellent
             technology for the simplification of our client's business needs. We
@@ -11,7 +11,7 @@
             development, web desigining, web/domain hosting, cms etc.
           </p>
         </div>
-        <div class="aboutus-img xl:w-1/2 ">
+        <div class="aboutus-img xl:w-1/2">
           <img src="../assets/about-img.png" alt="aayulogic" />
         </div>
       </div>
@@ -32,5 +32,8 @@ export default {
 <style>
 .aboutus-img img {
   @apply w-full block object-cover;
+}
+.aboutus-text p {
+  @apply leading-relaxed text-textcolor mb-8;
 }
 </style>

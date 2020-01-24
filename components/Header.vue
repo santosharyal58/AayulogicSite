@@ -1,7 +1,7 @@
 <template>
   <div class="header py-8">
     <div class="container">
-      <div class="navbar-brand">
+      <div class="navbar-brand max-w-quarter">
         <img src="../assets/logo.png" alt="aayulogic" />
       </div>
       <nav>
@@ -38,12 +38,8 @@ export default {
   @apply ml-4;
 }
 .navmenu li a {
-  display: inline-block;
-  font-size: 1.6rem;
+  @apply inline-block text-1.6 text-textcolor;
   font-family: 'Montserrat', sans-serif;
-}
-.navbar-brand {
-  max-width: 25rem;
 }
 .navbar-brand img {
   @apply block w-full;

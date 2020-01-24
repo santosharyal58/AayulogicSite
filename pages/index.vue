@@ -2,17 +2,29 @@
   <div class="page-wrapper">
     <Herobanner></Herobanner>
     <About></About>
+    <Features></Features>
+    <Clients></Clients>
+    <RecentProject></RecentProject>
+    <Contact></Contact>
   </div>
 </template>
 
 <script>
 import Herobanner from '~/components/Herobanner'
 import About from '~/components/Aboutus'
+import Features from '~/components/Features'
+import Clients from '~/components/OurClients'
+import RecentProject from '~/components/RecentProjects'
+import Contact from '~/components/ContactUs'
 
 export default {
   components: {
     Herobanner,
-    About
+    About,
+    Features,
+    Clients,
+    RecentProject,
+    Contact
   }
 }
 </script>
