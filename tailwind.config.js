@@ -32,7 +32,10 @@ module.exports = {
         half: '50rem'
       },
       fontSize: {
-        '1.6': '1.6rem'
+        '1.6': '1.6rem',
+        '7xl': '5rem'
+
+
       }
     }
 

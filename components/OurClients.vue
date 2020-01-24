@@ -1,7 +1,7 @@
 <template>
   <div class="top-clients py-40">
     <Title titletext="Top Clients"></Title>
-    <div class="clients-wrap">
+    <div class="container clients-wrap">
       <div class="row">
         <div
           class="feature w-full sm:w-full md:w-full lg:w-full xl:w-full mb-12 px-6"

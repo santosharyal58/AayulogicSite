@@ -36,7 +36,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 h1 {
-  font-size: 5rem;
   font-family: 'Raleway', sans-serif;
 }
 h2 {

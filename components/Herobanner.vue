@@ -6,7 +6,9 @@
     <div class="banner-content absolute inset-0 flex jusify-end items-center">
       <div class="container">
         <div class="content-wrap w-full ml-auto text-white max-w-5">
-          <h1>CREATE<br />AWESOME THINGS<br />FOR BETTER WEB</h1>
+          <h1 class="sm:text-3xl md:text-7xl">
+            CREATE<br />AWESOME THINGS<br />FOR BETTER WEB
+          </h1>
           <a href="#" class="btn btn-hero inline-block px-4 mt-10 h-20 rounded"
             >Contact Us</a
           >
