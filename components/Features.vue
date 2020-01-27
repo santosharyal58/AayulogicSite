@@ -1,115 +1,14 @@
 <template>
-  <div class="features-section bg-gray-bgg py-40">
+  <div id="features" class="features-section bg-gray-bgg py-40">
     <Title titletext="What We Do"></Title>
     <div class="container">
       <div class="row flex flex-wrap">
         <div
-          class="feature w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-12 px-6"
+          class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-12 px-6"
+          v-for="item in features"
+          :key="item.id"
         >
-          <div class="feature-wrap">
-            <figure>
-              <img src="../assets/globe.png" alt="what we do" />
-            </figure>
-            <div class="feature-text">
-              <h3>Business Applications</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                corrupti animi laudantium necessitatibus, tempora exercitationem
-                non veniam fugit excepturi, sunt saepe quisquam ad quam facere
-                laboriosam, fuga quia aliquid sint?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-12 px-6"
-        >
-          <div class="feature-wrap">
-            <figure>
-              <img src="../assets/globe.png" alt="what we do" />
-            </figure>
-            <div class="feature-text ">
-              <h3>Business Applications</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                corrupti animi laudantium necessitatibus, tempora exercitationem
-                non veniam fugit excepturi, sunt saepe quisquam ad quam facere
-                laboriosam, fuga quia aliquid sint?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-12 px-6"
-        >
-          <div class="feature-wrap">
-            <figure>
-              <img src="../assets/globe.png" alt="what we do" />
-            </figure>
-            <div class="feature-text">
-              <h3>Business Applications</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                corrupti animi laudantium necessitatibus, tempora exercitationem
-                non veniam fugit excepturi, sunt saepe quisquam ad quam facere
-                laboriosam, fuga quia aliquid sint?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-12 px-6"
-        >
-          <div class="feature-wrap">
-            <figure>
-              <img src="../assets/globe.png" alt="what we do" />
-            </figure>
-            <div class="feature-text">
-              <h3>Business Applications</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                corrupti animi laudantium necessitatibus, tempora exercitationem
-                non veniam fugit excepturi, sunt saepe quisquam ad quam facere
-                laboriosam, fuga quia aliquid sint?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-12 px-6"
-        >
-          <div class="feature-wrap">
-            <figure>
-              <img src="../assets/globe.png" alt="what we do" />
-            </figure>
-            <div class="feature-text">
-              <h3>Business Applications</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                corrupti animi laudantium necessitatibus, tempora exercitationem
-                non veniam fugit excepturi, sunt saepe quisquam ad quam facere
-                laboriosam, fuga quia aliquid sint?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-12 px-6"
-        >
-          <div class="feature-wrap">
-            <figure>
-              <img src="../assets/globe.png" alt="what we do" />
-            </figure>
-            <div class="feature-text">
-              <h3>Business Applications</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                corrupti animi laudantium necessitatibus, tempora exercitationem
-                non veniam fugit excepturi, sunt saepe quisquam ad quam facere
-                laboriosam, fuga quia aliquid sint?
-              </p>
-            </div>
-          </div>
+          <SingleFeature :fprop="item"></SingleFeature>
         </div>
       </div>
     </div>
@@ -118,10 +17,72 @@
 
 <script>
 import Title from './Titleblock'
+import SingleFeature from './SingleFeature'
 export default {
   name: 'Features',
   components: {
-    Title
+    Title,
+    SingleFeature
+  },
+  data() {
+    return {
+      features: [
+        {
+          id: 1,
+          title: 'Business Applications',
+          content:
+            'Awesome user experience and analytical overview of your business data to make excellent decisions.'
+        },
+        {
+          id: 2,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 3,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 4,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 5,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 6,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 7,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 8,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        },
+        {
+          id: 9,
+          title: 'Enterprise Solutions',
+          content:
+            'Build customized CMS and dashboard applications tailored to fit your business.'
+        }
+      ]
+    }
   }
 }
 </script>

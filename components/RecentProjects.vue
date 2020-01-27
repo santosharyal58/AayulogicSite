@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-section py-40">
+  <div id="product" class="projects-section py-40">
     <Title titletext="Most Recent Project"></Title>
     <div class="container">
       <div class="about-hrsoft flex flex-wrap">

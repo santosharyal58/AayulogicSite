@@ -1,6 +1,8 @@
 <template>
   <div class="section-title text-center mb-16">
-    <h2 class="inline-block uppercase mb-8 font-light text-titlecolor">
+    <h2
+      class="inline-block uppercase mb-8 font-light text-titlecolor md:text-5xl sm:text-4xl"
+    >
       {{ titletext }}
     </h2>
     <p>We are good at what we do.</p>

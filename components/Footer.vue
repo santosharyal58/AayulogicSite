@@ -1,5 +1,5 @@
 <template>
-  <div class="footer bg-footercolor py-40">
+  <div id="footer" class="footer bg-footercolor py-40">
     <ul class="social-list flex justify-center">
       <li>
         <a href=""

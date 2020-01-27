@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-us">
+  <div id="contactus" class="contact-us">
     <div class="contact-toppart pt-40 pb-20">
       <Title titletext="Contact Us"></Title>
     </div>

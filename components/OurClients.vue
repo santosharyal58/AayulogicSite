@@ -1,5 +1,5 @@
 <template>
-  <div class="top-clients py-40">
+  <div id="clients" class="top-clients py-40">
     <Title titletext="Top Clients"></Title>
     <div class="container clients-wrap">
       <div class="row">

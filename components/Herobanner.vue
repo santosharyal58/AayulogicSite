@@ -1,12 +1,12 @@
 <template>
-  <div class="hero-banner relative max-h-screen overflow-hidden">
-    <div class="banner-image w-full h-auto">
-      <img src="../assets/flex.gif" alt="hero banner" />
+  <div class="hero-banner relative min-h-screen overflow-hidden">
+    <div class="banner-image absolute w-full h-full">
+      <img src="../assets/flex.gif" alt="aayulogic" />
     </div>
     <div class="banner-content absolute inset-0 flex jusify-end items-center">
       <div class="container">
         <div class="content-wrap w-full ml-auto text-white max-w-5">
-          <h1 class="sm:text-3xl md:text-7xl">
+          <h1 class="md:text-7xl">
             CREATE<br />AWESOME THINGS<br />FOR BETTER WEB
           </h1>
           <a href="#" class="btn btn-hero inline-block px-4 mt-10 h-20 rounded"
@@ -26,7 +26,7 @@ export default {
 
 <style>
 .banner-image img {
-  @apply w-full block object-cover;
+  @apply absolute w-full h-full block object-cover;
 }
 .btn-hero {
   @apply bg-transparent uppercase border-solid border text-white  text-3xl cursor-pointer;

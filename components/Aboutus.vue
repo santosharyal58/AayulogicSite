@@ -1,9 +1,9 @@
 <template>
-  <div class="about-us py-40">
+  <div id="aboutus" class="about-us py-40">
     <div class="container">
       <Title titletext="About Us"></Title>
       <div class="aboutus-wrap flex flex-wrap w-full">
-        <div class="aboutus-text px-4 xl:w-1/2">
+        <div class="aboutus-text px-4 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
           <p>
             We're a team of passionate people who make use of excellent
             technology for the simplification of our client's business needs. We
@@ -11,7 +11,7 @@
             development, web desigining, web/domain hosting, cms etc.
           </p>
         </div>
-        <div class="aboutus-img xl:w-1/2">
+        <div class="aboutus-img sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
           <img src="../assets/about-img.png" alt="aayulogic" />
         </div>
       </div>
