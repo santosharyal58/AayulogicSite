@@ -1,17 +1,28 @@
 <template>
   <div class="hero-banner relative min-h-screen overflow-hidden">
     <div class="banner-image absolute w-full h-full">
-      <img src="../assets/flex.gif" alt="aayulogic" />
+      <img src="../assets/bglast.png" alt="aayulogic" />
     </div>
-    <div class="banner-content absolute inset-0 flex jusify-end items-center">
+    <div class="banner-content absolute inset-0 flex jusify-start items-center">
       <div class="container">
-        <div class="content-wrap w-full ml-auto text-white max-w-5">
-          <h1 class="md:text-7xl">
-            CREATE<br />AWESOME THINGS<br />FOR BETTER WEB
+        <div class="content-wrap w-full text-white max-w-7">
+          <h1 class="md:text-6xl capitalize mb-16">
+            <span class="text-activecolor md:text-6xl font-semibold"
+              >Create Awesome Things</span
+            >
+            <br />For Better Web
           </h1>
-          <a href="#" class="btn btn-hero inline-block px-4 mt-10 h-20 rounded"
-            >Contact Us</a
-          >
+          <div class="product-developed">
+            <h6 class="text-2xl">Our Recent Projects</h6>
+            <div class="icons-holder mt-8">
+              <a href="https://rojgari.com/"
+                ><img class="w-64" src="../assets/rojgari.svg" alt="rojgari"
+              /></a>
+              <a href="https://merojob.com/"
+                ><img class="w-64" src="../assets/merojob.svg" alt="merojob"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -31,5 +42,11 @@ export default {
 .btn-hero {
   @apply bg-transparent uppercase border-solid border text-white  text-3xl cursor-pointer;
   line-height: 5rem;
+}
+.icons-holder a {
+  @apply inline-block;
+}
+.icons-holder img {
+  @apply w-64 mr-8;
 }
 </style>

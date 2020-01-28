@@ -3,9 +3,11 @@
     <Herobanner></Herobanner>
     <About></About>
     <Features></Features>
+    <OurExpertise></OurExpertise>
     <Clients></Clients>
     <RecentProject></RecentProject>
     <Contact></Contact>
+    <CareerSection></CareerSection>
   </div>
 </template>
 
@@ -16,6 +18,8 @@ import Features from '~/components/Features'
 import Clients from '~/components/OurClients'
 import RecentProject from '~/components/RecentProjects'
 import Contact from '~/components/ContactUs'
+import CareerSection from '~/components/CareerSection'
+import OurExpertise from '~/components/OurExpertise'
 
 export default {
   components: {
@@ -24,7 +28,9 @@ export default {
     Features,
     Clients,
     RecentProject,
-    Contact
+    Contact,
+    CareerSection,
+    OurExpertise
   }
 }
 </script>

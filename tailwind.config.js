@@ -32,12 +32,14 @@ module.exports = {
         '3': '30rem',
         '4': '40rem',
         '5': '50rem',
+        '7': '70rem',
         '8': '8rem',
         '25': '25%',
         '50': '50%',
         '75': '75%',
         '100': '100%',
         mob: '54rem',
+        fifteen: '15rem',
         quarter: '25rem',
         half: '50rem'
       },
@@ -46,13 +48,6 @@ module.exports = {
         '7xl': '5rem'
       }
     }
-
-    // screens: {
-    //   xl: '1280px',
-    //   lg: '1024px',
-    //   md: '768px',
-    //   xs: '575px'
-    // }
   },
 
   // variants: {},

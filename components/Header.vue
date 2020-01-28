@@ -1,7 +1,7 @@
 <template>
-  <div id="home" class="header fixed w-full z-30 bg-white shadow-md py-8">
+  <div id="home" class="header fixed w-full z-30 py-8">
     <div class="container w-full">
-      <div class="navbar-brand max-w-quarter">
+      <div class="navbar-brand max-w-fifteen">
         <img src="../assets/logo.png" alt="aayulogic" />
       </div>
       <button class="toggleBtn cursor-pointer" @click="isOpen = !isOpen">
@@ -64,8 +64,8 @@ export default {
   @apply ml-4;
 }
 .navmenu li a {
-  @apply inline-block text-1.6 text-textcolor;
-  font-family: 'Montserrat', sans-serif;
+  @apply inline-block text-1.6 text-white;
+  font-family: 'Poppins', sans-serif;
 }
 .navbar-brand img {
   @apply block w-full;

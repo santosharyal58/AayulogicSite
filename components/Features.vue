@@ -4,11 +4,15 @@
     <div class="container">
       <div class="row flex flex-wrap">
         <div
+          v-for="(item, index) in features"
+          :key="index"
           class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-12 px-6"
-          v-for="item in features"
-          :key="item.id"
         >
-          <SingleFeature :fprop="item"></SingleFeature>
+          <SingleFeature
+            :icon="item.icon"
+            :title="item.title"
+            :content="item.content"
+          ></SingleFeature>
         </div>
       </div>
     </div>
@@ -18,7 +22,31 @@
 <script>
 import Title from './Titleblock'
 import SingleFeature from './SingleFeature'
+import {
+  uniCommentAltPlus,
+  uniChartPieAlt,
+  uniChartLine,
+  uniGlobe,
+  uniMobileAndroid,
+  uniPalette,
+  uniDocumentLayoutLeft,
+  uniShoppingTrolley,
+  uniApps,
+  uniServerConnection
+} from '@/icons'
 export default {
+  icons: {
+    uniCommentAltPlus,
+    uniChartPieAlt,
+    uniChartLine,
+    uniGlobe,
+    uniMobileAndroid,
+    uniPalette,
+    uniDocumentLayoutLeft,
+    uniShoppingTrolley,
+    uniApps,
+    uniServerConnection
+  },
   name: 'Features',
   components: {
     Title,
@@ -28,58 +56,58 @@ export default {
     return {
       features: [
         {
-          id: 1,
+          icon: this.$options.icons.uniChartPieAlt,
           title: 'Business Applications',
           content:
             'Awesome user experience and analytical overview of your business data to make excellent decisions.'
         },
         {
-          id: 2,
+          icon: this.$options.icons.uniChartLine,
           title: 'Enterprise Solutions',
           content:
             'Build customized CMS and dashboard applications tailored to fit your business.'
         },
         {
-          id: 3,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniGlobe,
+          title: 'Web Applications',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'We enjoy working with Python, PHP, Node.js, on the back-end and AngularJS, jQuery, HTML5 on the front-end.'
         },
         {
-          id: 4,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniMobileAndroid,
+          title: 'Mobile Applications',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'Build customized Development of both native and hybrid apps for iOS, and Android with intuitive and easy-to-use UI/UX. and dashboard applications tailored to fit your business.'
         },
         {
-          id: 5,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniPalette,
+          title: 'UI/UX',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'We believe in creating seamless user experience and visually appealing user interface.'
         },
         {
-          id: 6,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniDocumentLayoutLeft,
+          title: 'CMS',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'Build customized CMS Including, but not limited to Wordpress, Drupal,Joomla and custom solutions for special requirements. dashboard applications tailored to fit your business.'
         },
         {
-          id: 7,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniShoppingTrolley,
+          title: 'E-Commerce',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            "Magento, X-Cart, Opencart, Shopify and custom e-commerce sotware. You focus on sale, we'll take care of the technology."
         },
         {
-          id: 8,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniApps,
+          title: 'Management Systems',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'HRIS, Attendance, Payroll, CRM.Analytical data at your fingertips to help you make the best decision.'
         },
         {
-          id: 9,
-          title: 'Enterprise Solutions',
+          icon: this.$options.icons.uniServerConnection,
+          title: 'Web Hosting',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'Cloud hosting, dedicated VPS hosting, container hosting, shared hosting etc.'
         }
       ]
     }

@@ -3,21 +3,15 @@
     <h2
       class="inline-block uppercase mb-8 font-light text-titlecolor md:text-5xl sm:text-4xl"
     >
-      {{ titletext }}
+      Careers With Us
     </h2>
-    <!-- <p>We are good at what we do.</p> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Title',
-  props: ['titletext']
+  name: 'CareerSection'
 }
 </script>
 
-<style>
-.section-title p {
-  @apply text-3xl text-textcolor;
-}
-</style>
+<style></style>
