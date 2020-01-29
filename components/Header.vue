@@ -73,15 +73,15 @@ export default {
   text-align: center;
   flex-wrap: wrap;
 }
-.scrolled {
+/* .scrolled {
   @apply bg-white;
-}
-.scrolled .navbar-brand svg {
+} */
+/* .scrolled .navbar-brand svg {
   @apply text-activecolor;
-}
-.scrolled .navmenu li a {
+} */
+/* .scrolled .navmenu li a {
   @apply text-titlecolor;
-}
+} */
 .navmenu li {
   @apply ml-4;
 }

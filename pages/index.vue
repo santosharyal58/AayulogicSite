@@ -20,7 +20,6 @@ import RecentProject from '~/components/RecentProjects'
 import Contact from '~/components/ContactUs'
 import CareerSection from '~/components/CareerSection'
 import OurExpertise from '~/components/OurExpertise'
-
 export default {
   components: {
     Herobanner,

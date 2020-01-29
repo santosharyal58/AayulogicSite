@@ -2,16 +2,20 @@
   <div>
     <Header></Header>
     <nuxt />
+    <!-- <Popup></Popup> -->
     <Footer></Footer>
   </div>
 </template>
 <script>
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
+// import Popup from '~/components/Popup'
+
 export default {
   components: {
     Header,
     Footer
+    // Popup
   }
 }
 </script>
