@@ -1,10 +1,10 @@
 <template>
   <div class="feature-wrap">
     <figure>
-      <IconBase :path="icon"></IconBase>
+      <IconBase classProp="w-full h-full" :path="icon"></IconBase>
     </figure>
-    <div class="feature-text">
-      <h3>{{ title }}</h3>
+    <div class="feature-text ">
+      <h3 class="xs:text-3xl text-textcolor font-medium mb-2">{{ title }}</h3>
       <p>
         {{ content }}
       </p>
@@ -37,9 +37,14 @@ export default {
 </script>
 
 <style>
-.feature-wrap figure svg {
-  width: 36px;
-  height: 36px;
+.feature-wrap:hover h3,
+.feature-wrap:hover figure svg {
   @apply text-activecolor;
+}
+.feature-wrap figure {
+  @apply text-titlecolor max-w-4r w-full h-full;
+}
+.feature-wrap figure svg {
+  @apply w-full h-full w-full object-cover;
 }
 </style>

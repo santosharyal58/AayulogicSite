@@ -1,7 +1,7 @@
 <template>
   <div class="hero-banner relative min-h-screen overflow-hidden">
     <div class="banner-image absolute w-full h-full">
-      <img src="../assets/bglast.png" alt="aayulogic" />
+      <img src="../assets/gb.jpg" alt="aayulogic" />
     </div>
     <div class="banner-content absolute inset-0 flex jusify-start items-center">
       <div class="container">
@@ -15,6 +15,12 @@
           <div class="product-developed">
             <h6 class="text-2xl">Our Recent Projects</h6>
             <div class="icons-holder mt-8">
+              <a href="https://realhr.com/"
+                ><img
+                  class="w-64"
+                  src="../assets/realhrsoft.svg"
+                  alt="realhrsoft"
+              /></a>
               <a href="https://rojgari.com/"
                 ><img class="w-64" src="../assets/rojgari.svg" alt="rojgari"
               /></a>

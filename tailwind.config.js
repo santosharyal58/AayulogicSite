@@ -9,6 +9,7 @@ const { colors } = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     screens: {
+      xs: '320px',
       sm: '540px',
       md: '720px',
       lg: '960px',
@@ -19,21 +20,28 @@ module.exports = {
       //   'xs': {'max': '639px'}
       // },
       colors: {
-        textcolor: '#929292',
+        textcolor: '#1B2A31',
         titlecolor: '#444',
-        activecolor: '#6173f4',
+        activecolor: '#045CB6',
         footercolor: '#052950',
+        bgsecondary: '#f2f9ff',
+        newfooter: '#303849',
         gray: {
           ...colors.gray,
           bgg: '#F0F0F0'
         }
       },
+      width: {
+        '1/2': '50%'
+      },
       maxWidth: {
+        '4r': '4.8rem',
         '3': '30rem',
         '4': '40rem',
         '5': '50rem',
         '7': '70rem',
         '8': '8rem',
+        '10': '10rem',
         '25': '25%',
         '50': '50%',
         '75': '75%',

@@ -1,9 +1,9 @@
 <template>
   <div id="contactus" class="contact-us">
-    <div class="contact-toppart pt-40 pb-20">
-      <Title titletext="Contact Us"></Title>
-    </div>
-    <div class="contact-bottom my-16">
+    <div class="contact-bottom">
+      <div class="contact-title">
+        <Title titletext="Contact Us"></Title>
+      </div>
       <div class="container flex flex-wrap">
         <ContactForm></ContactForm>
         <div
@@ -48,9 +48,6 @@ export default {
 </script>
 
 <style>
-.contact-toppart {
-  background-image: url(../assets/bluebg.jpg);
-}
 .contact-toppart .section-title h2 {
   @apply text-white;
 }

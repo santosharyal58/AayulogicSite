@@ -6,8 +6,8 @@
     <OurExpertise></OurExpertise>
     <Clients></Clients>
     <RecentProject></RecentProject>
-    <Contact></Contact>
     <CareerSection></CareerSection>
+    <Contact></Contact>
   </div>
 </template>
 

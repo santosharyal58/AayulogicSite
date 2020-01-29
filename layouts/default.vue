@@ -25,6 +25,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 *,
@@ -35,9 +36,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-}
-h2 {
-  font-size: 4.2rem;
+  overflow-x: hidden;
 }
 h3 {
   font-size: 1.8rem;
@@ -58,6 +57,42 @@ input::placeholder {
 @media (min-width: 1024px) {
   .toggleBtn {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .linkslist {
+    @apply flex-wrap justify-center mb-8;
+  }
+}
+@media (max-width: 639px) {
+  /* banner */
+  .content-wrap h1,
+  .product-developed {
+    @apply text-center;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  /* about us */
+  .aboutus-text h4 {
+    @apply pr-0 text-3xl text-left mb-2;
+    padding-left: 0 !important;
+  }
+  .aboutus-text p {
+    @apply pr-0 text-left text-2xl;
+  }
+  /* footer */
+  .footer-brand figure {
+    @apply mx-auto mb-8;
+  }
+
+  /* what we do */
+  .feature-text p {
+    @apply text-2xl;
+  }
+  /* career */
+  .joinus-banner h4 {
+    @apply text-2xl;
   }
 }
 </style>

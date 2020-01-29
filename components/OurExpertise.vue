@@ -1,58 +1,78 @@
 <template>
-  <div class="our-expertise py-40">
-    <h2 class="text-center text-titlecolor mb-20">Our Expertise</h2>
+  <div class="our-expertise pt-40 pb-20 xs:pt-20">
+    <h2 class="text-center text-titlecolor md:text-5xl sm:text-4xl mb-20">
+      Our Expertise
+    </h2>
     <div class="container">
       <div class="row tech-row tech-rowup flex flex-wrap">
         <div
-          class="tech-block  w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
         >
           <figure class="technology">
             <img src="../assets/python.svg" alt="python" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/javascript.svg" alt="js" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/r.svg" alt="R" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/Ansible.svg" alt="ansible" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/postgre.svg" alt="postgres" />
           </figure>
         </div>
       </div>
       <div class="row tech-row tech-rowdown flex flex-wrap">
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/flutter.svg" alt="flutter" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/redis.svg" alt="redis" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/aws.svg" alt="aws" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block w-full xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/docker.svg" alt="docker" />
           </figure>
         </div>
-        <div class="tech-block w-full sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6">
+        <div
+          class="tech-block w-full xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
+        >
           <figure class="technology">
             <img src="../assets/figma.svg" alt="figma" />
             <!-- <IconBase :path="$options.icons.uniCommentPlus"></IconBase> -->
@@ -64,12 +84,7 @@
 </template>
 
 <script>
-// import { uniCommentPlus } from '@/icons'
-// import IconBase from '~/components/IconBase'
 export default {
-  //   icons: {
-  //     uniCommentPlus
-  //   },
   name: 'OurExpertise'
 }
 </script>
@@ -77,14 +92,14 @@ export default {
 <style>
 .technology {
   min-height: 100px;
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
 }
 .technology img {
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  margin: 0 auto;
+  filter: grayscale(100%);
+  @apply block w-20 h-20 mx-auto;
+}
+.tech-block:hover .technology img {
+  filter: none;
 }
 .tech-block {
   /* border-bottom: 1px solid #000; */
@@ -95,5 +110,13 @@ export default {
 }
 .tech-rowup {
   border-bottom: 1px solid #dbdee5;
+}
+@media (max-width: 639px) {
+  .tech-rowup {
+    @apply border-0;
+  }
+  .tech-block {
+    @apply border-0;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="features" class="features-section bg-gray-bgg py-40">
+  <div id="features" class="features-section bg-bgsecondary py-40 xs:py-20">
     <Title titletext="What We Do"></Title>
     <div class="container">
       <div class="row flex flex-wrap">
@@ -117,18 +117,12 @@ export default {
 
 <style>
 .feature-wrap {
-  @apply flex;
-}
-.feature-wrap figure {
-  @apply max-w-8 w-full;
+  @apply flex items-start;
 }
 .feature-text {
-  @apply pl-4;
-}
-.feature-text h3 {
-  @apply text-titlecolor;
+  @apply px-6;
 }
 .feature-text p {
-  @apply text-textcolor leading-loose;
+  @apply text-2xl	text-textcolor leading-relaxed;
 }
 </style>

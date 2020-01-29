@@ -2,7 +2,7 @@
   <div id="home" class="header fixed w-full z-30 py-8">
     <div class="container w-full">
       <div class="navbar-brand max-w-fifteen">
-        <img src="../assets/logo.png" alt="aayulogic" />
+        <img src="../assets/aayulogic-main.svg" alt="aayulogic" />
       </div>
       <button class="toggleBtn cursor-pointer" @click="isOpen = !isOpen">
         <svg
@@ -40,17 +40,30 @@
 </template>
 
 <script>
+// for sticky header
+
+// end
 export default {
   name: 'Header',
   data() {
     return {
       isOpen: true
     }
+  },
+  mounted() {
+    window.onscroll = () => {
+      const header = document.querySelector('#home')
+      if (this.scrollY <= 100) header.className = ''
+      else header.classList.add('scrolled')
+    }
   }
 }
 </script>
 
 <style>
+.header {
+  transition: all 0.4s ease-in-out;
+}
 .header .container {
   /* margin: 0 auto;
   max-width: 1140px; */
@@ -59,6 +72,15 @@ export default {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+}
+.scrolled {
+  @apply bg-white;
+}
+.scrolled .navbar-brand svg {
+  @apply text-activecolor;
+}
+.scrolled .navmenu li a {
+  @apply text-titlecolor;
 }
 .navmenu li {
   @apply ml-4;

@@ -6,10 +6,13 @@
         <div
           class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
         >
+          <h2 class="mb-12 text-left text-white text-2xl">
+            Featured Project
+          </h2>
           <figure class="product-img max-w-quarter mb-8">
-            <img src="../assets/realhr.png" alt="hrsoft" />
+            <img src="../assets/realhrsoft-main.svg" alt="hrsoft" />
           </figure>
-          <p>
+          <p class="xs:text-2xl ">
             Real HR Soft is a result of a continuous and iterative process to
             create the best possible solutions to day-to-day problems faced by
             HR managers. Countless hours have been spent on making sure that
@@ -48,7 +51,7 @@ export default {
   @apply text-white;
 }
 .about-hrsoft p {
-  @apply text-white leading-loose;
+  @apply text-white leading-relaxed;
 }
 .product-img img {
   @apply block w-full h-auto;
