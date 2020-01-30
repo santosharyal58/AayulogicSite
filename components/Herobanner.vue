@@ -1,7 +1,7 @@
 <template>
   <div class="hero-banner relative min-h-screen overflow-hidden">
     <div class="banner-image absolute w-full h-full">
-      <img src="../assets/gb.jpg" alt="aayulogic" />
+      <img src="../assets/bglatest.png" alt="aayulogic" />
     </div>
     <div class="banner-content absolute inset-0 flex jusify-start items-center">
       <div class="container">

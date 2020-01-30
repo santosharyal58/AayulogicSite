@@ -2,7 +2,9 @@
   <transition name="slide-fade">
     <div class="popup_box p-8">
       <div class="popup_wrap">
-        <button class="close" @click="$emit('close')">X</button>
+        <button class="close hover:bg-blue-700" @click="$emit('close')">
+          Close
+        </button>
         <div class="popup_content">
           <h2 class="text-4xl text-center mb-8">About Working Here</h2>
           <p class="text-2xl mb-8">
@@ -29,10 +31,10 @@
                 <figure>
                   <img src="../assets/icon2.png" alt="benefits" />
                 </figure>
-                <h5>WORKING CULTURE</h5>
+                <h5>BENEFIT PACKAGES</h5>
                 <p>
-                  We believe that productivity is a result of work mixed with
-                  the love for the work.
+                  We treasure our employees and value their contribution in the
+                  achievement of overall company objectives.
                 </p>
               </div>
             </div>
@@ -41,10 +43,10 @@
                 <figure>
                   <img src="../assets/icon3.png" alt="benefits" />
                 </figure>
-                <h5>WORKING CULTURE</h5>
+                <h5>HEALTH BENEFITS</h5>
                 <p>
-                  We believe that productivity is a result of work mixed with
-                  the love for the work.
+                  We treasure our employees and value their contribution in the
+                  achievement of overall company objectives.
                 </p>
               </div>
             </div>
@@ -53,10 +55,10 @@
                 <figure>
                   <img src="../assets/icon4.png" alt="benefits" />
                 </figure>
-                <h5>WORKING CULTURE</h5>
+                <h5>REWARDS & RECOGNITION</h5>
                 <p>
-                  We believe that productivity is a result of work mixed with
-                  the love for the work.
+                  Each employee contributes to the strengthening & progress of
+                  the organization and deserves to be rewarded.
                 </p>
               </div>
             </div>
@@ -75,49 +77,36 @@ export default {
 
 <style>
 .close {
-  @apply block bg-activecolor text-white;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: -10px;
-  right: -10px;
+  @apply block absolute top-0 right-0 bg-activecolor text-white text-2xl p-2;
 }
 .popup_box {
-  @apply fixed inset-0 flex justify-center items-center;
+  @apply fixed inset-0 flex justify-center items-center overflow-auto z-30;
   background: rgba(0, 0, 0, 0.5);
 }
 .popup_wrap {
-  padding: 2rem;
+  @apply relative w-full bg-bgsecondary px-8 py-16 rounded-lg;
   max-width: 960px;
-  width: 100%;
-  background: #ebebeb;
-  position: relative;
 }
 .benefit-block figure {
+  @apply bg-activecolor mx-auto mb-8 flex justify-center items-center;
   width: 70px;
   height: 70px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
 }
-.benefit-block figure {
-  background: #045cb6;
+.benefit-block figure img {
+  @apply max-w-3r;
 }
 .benefit-block p {
   @apply text-xl text-center;
 }
 .benefit-block h5 {
-  @apply text-3xl mb-10 text-center;
+  @apply text-2xl mb-10 text-center;
 }
 .slide-fade-enter-active {
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 .slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {

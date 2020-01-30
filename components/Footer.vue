@@ -1,5 +1,5 @@
 <template>
-  <div id="footer" class="footer bg-newfooter py-20">
+  <div id="footer" class="footer bg-footercolor py-10">
     <div class="container flex flex-wrap items-center">
       <div class="footer-brand w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
         <figure>
@@ -12,15 +12,15 @@
           <li><a href="#">Services</a></li>
           <li><a href="#">Client</a></li>
           <li><a href="#">Product</a></li>
-          <li><a href="#">Contact Us</a></li>
           <li><a href="#">Career</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
       <ul
-        class="social-list w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 flex justify-center "
+        class="social-list w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 flex justify-end "
       >
         <li>
-          <a href=""
+          <a href="https://www.facebook.com/aayulogic/"
             ><img class="footer-icon" src="../assets/facebook.svg" alt=""
           /></a>
         </li>
@@ -37,7 +37,10 @@
       </ul>
     </div>
     <div class="copyright mt-12 w-full">
-      <p>&copy; 2020 aayulogic Pvt. Ltd., All Rights Reserved.</p>
+      <div class="container">
+        <hr />
+        <p>&copy; 2020 aayulogic Pvt. Ltd. All Rights Reserved.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -50,7 +53,7 @@ export default {
 
 <style>
 .social-list li {
-  @apply w-12 h-12 bg-activecolor mr-4 p-2 rounded-full;
+  @apply w-8 h-8 mr-8;
 }
 .social-list li a {
   @apply w-full h-full;
@@ -74,6 +77,10 @@ export default {
   @apply text-white;
 }
 .copyright p {
-  @apply text-center;
+  @apply text-left text-lg uppercase;
+}
+hr {
+  @apply mb-6;
+  border-top: 1px solid #dbdee5;
 }
 </style>

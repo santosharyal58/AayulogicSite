@@ -23,9 +23,10 @@ module.exports = {
         textcolor: '#1B2A31',
         titlecolor: '#444',
         activecolor: '#045CB6',
-        footercolor: '#052950',
+        footercolor: '#243B68',
         bgsecondary: '#f2f9ff',
         newfooter: '#303849',
+        bordercolor: '#dbdee5',
         gray: {
           ...colors.gray,
           bgg: '#F0F0F0'
@@ -35,6 +36,7 @@ module.exports = {
         '1/2': '50%'
       },
       maxWidth: {
+        '3r': '3.6rem',
         '4r': '4.8rem',
         '3': '30rem',
         '4': '40rem',
@@ -54,6 +56,9 @@ module.exports = {
       fontSize: {
         '1.6': '1.6rem',
         '7xl': '5rem'
+      },
+      inset: {
+        '25': '25rem'
       }
     }
   },

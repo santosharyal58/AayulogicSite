@@ -21,11 +21,10 @@
           ></path>
         </svg>
       </button>
-      <nav class="header-nav">
+      <nav class="header-nav" :class="isOpen ? 'show-nav' : 'collapsed-nav'">
         <ul
           class="navmenu text-black flex flex-wrap"
-          v-if="!isOpen"
-          @close="isOpen = false"
+          :class="isOpen ? 'block' : 'hidden'"
         >
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutus">About Us</a></li>
@@ -62,59 +61,67 @@ export default {
 </script>
 
 <style>
-/* .header {
-  transition: all 0.4s ease-in-out;
-} */
-
 .header .container {
-  /* margin: 0 auto;
-  max-width: 1140px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
 }
-.scrolled {
+.header {
   @apply bg-white;
 }
-.scrolled .navbar-brand svg {
-  @apply text-activecolor;
-}
-.scrolled .navmenu li a {
-  @apply text-titlecolor;
+.collapsed-nav .navmenu {
+  @apply flex;
 }
 .navmenu li {
   @apply ml-4;
 }
 .navmenu li a {
-  @apply inline-block text-1.6 text-white;
+  @apply inline-block text-1.6 text-titlecolor;
   font-family: 'Poppins', sans-serif;
+}
+.navmenu li a:hover {
+  @apply text-activecolor;
 }
 .navbar-brand img {
   @apply block w-full;
 }
 .toggleBtn {
-  @apply w-12 h-12;
+  @apply w-8 h-8 -mt-3;
+}
+.toggleBtn svg {
+  @apply text-activecolor;
 }
 @media (max-width: 63.9rem) {
   .container {
     @apply px-4 w-full;
   }
   .header-nav {
-    @apply w-full relative z-10;
+    @apply w-full z-10;
+    transition: all 0.4s ease-in-out;
   }
   .header-nav ul li {
-    @apply w-full bg-activecolor text-white py-4;
+    @apply w-full bg-bgsecondary  py-4 m-0;
   }
   .header-nav ul {
-    @apply absolute inset-0;
+    @apply absolute left-0 right-0 w-full h-auto;
+    top: 7rem;
   }
   .header-nav ul li a {
-    @apply text-white text-4xl;
+    @apply text-titlecolor text-2xl;
+  }
+  .collapsed-nav .navmenu {
+    display: none;
   }
   h1 {
     @apply text-5xl;
+  }
+  .aboutus-text h4 {
+    @apply pl-0;
+  }
+  .icons-holder a {
+    @apply pb-6;
   }
 }
 </style>

@@ -10,16 +10,13 @@
           </h2>
         </div>
         <h4 class="text-textcolor text-3xl">
-          Interested in becoming part of the team?
-          <a class="text-activecolor font-semibold hover:underline" href="#"
-            >Apply now</a
-          >
-          or Contact us at 9802075560
+          Interested in becoming part of the team? Contact us at
+          <a class="hover:underline" href="tel:9802075560">9802075560</a>
         </h4>
         <h5
           class="text-2xl leading-loose text-activecolor font-semibold hover:underline"
         >
-          <a @click="showModal = true" class="btn-knowmore"
+          <a @click="showModal = true" class="btn-knowmore cursor-pointer"
             >Learn more about working here</a
           >
         </h5>
@@ -38,7 +35,7 @@ export default {
   },
   data() {
     return {
-      showModal: true
+      showModal: false
     }
   }
 }

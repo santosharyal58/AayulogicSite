@@ -37,6 +37,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -52,20 +53,30 @@ h4 {
 p {
   @apply text-1.6;
 }
-input::placeholder {
-  @apply text-titlecolor text-2xl;
+input::placeholder,
+textarea::placeholder {
+  @apply text-gray-600 text-xl;
 }
 .container {
   @apply mx-auto;
 }
 @media (min-width: 1024px) {
   .toggleBtn {
-    display: none;
+    @apply hidden;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .footer .container {
+    @apply flex-col justify-center;
+  }
+  .footer-brand figure img {
+    @apply mx-auto mb-8;
+  }
   .linkslist {
     @apply flex-wrap justify-center mb-8;
+  }
+  .social-list {
+    @apply justify-center;
   }
 }
 @media (max-width: 639px) {
@@ -75,7 +86,11 @@ input::placeholder {
     @apply text-center;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-3xl relative;
+  }
+  h2::before {
+    @apply absolute;
+    content: '';
   }
   /* about us */
   .aboutus-text h4 {
@@ -97,6 +112,14 @@ input::placeholder {
   /* career */
   .joinus-banner h4 {
     @apply text-2xl;
+  }
+  /* contact us */
+  .contact-bottom h4 {
+    @apply text-4xl;
+  }
+  /* popup */
+  .popup_wrap {
+    @apply top-25;
   }
 }
 </style>

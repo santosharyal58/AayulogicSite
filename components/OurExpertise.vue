@@ -40,8 +40,8 @@
             <img src="../assets/postgre.svg" alt="postgres" />
           </figure>
         </div>
-      </div>
-      <div class="row tech-row tech-rowdown flex flex-wrap">
+        <!-- </div> -->
+        <!-- <div class="row tech-row tech-rowdown flex flex-wrap"> -->
         <div
           class="tech-block xs:w-1/2 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 px-6"
         >
@@ -102,18 +102,29 @@ export default {
   filter: none;
 }
 .tech-block {
-  /* border-bottom: 1px solid #000; */
   border-right: 1px solid #dbdee5;
 }
-.tech-row > div:last-child {
+/* .tech-row > div:last-child {
   border: none;
 }
 .tech-rowup {
   border-bottom: 1px solid #dbdee5;
+} */
+.tech-row > div:first-child,
+.tech-row > div:nth-child(2),
+.tech-row > div:nth-child(3),
+.tech-row > div:nth-child(4),
+.tech-row > div:nth-child(5) {
+  border-bottom: 1px solid #dbdee5;
 }
+.tech-row > div:nth-child(5),
+.tech-row > div:last-child {
+  border-right: none;
+}
+
 @media (max-width: 639px) {
-  .tech-rowup {
-    @apply border-0;
+  .tech-row > div {
+    border-bottom: 0 !important;
   }
   .tech-block {
     @apply border-0;

@@ -2,7 +2,11 @@
   <div id="product" class="projects-section py-40">
     <!-- <Title titletext="Most Recent Project"></Title> -->
     <div class="container">
-      <div class="about-hrsoft flex flex-wrap">
+      <div
+        itemscope
+        itemtype="http://schema.org/Product"
+        class="about-hrsoft flex flex-wrap"
+      >
         <div
           class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
         >
@@ -10,9 +14,9 @@
             Featured Project
           </h2>
           <figure class="product-img max-w-quarter mb-8">
-            <img src="../assets/realhrsoft-main.svg" alt="hrsoft" />
+            <img src="../assets/realhrsoft-main.svg" alt="realhrsoft" />
           </figure>
-          <p class="xs:text-2xl ">
+          <p itemprop="image" class="xs:text-2xl ">
             Real HR Soft is a result of a continuous and iterative process to
             create the best possible solutions to day-to-day problems faced by
             HR managers. Countless hours have been spent on making sure that
@@ -23,7 +27,7 @@
           class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
         >
           <figure class="product-img">
-            <img src="../assets/Group 4.png" alt="hrsoft" />
+            <img itemprop="image" src="../assets/Group 4.png" alt="hrsoft" />
           </figure>
         </div>
       </div>
