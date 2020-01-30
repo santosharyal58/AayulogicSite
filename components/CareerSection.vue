@@ -19,16 +19,28 @@
         <h5
           class="text-2xl leading-loose text-activecolor font-semibold hover:underline"
         >
-          <a class="btn-knowmore">Learn more about working here</a>
+          <a @click="showModal = true" class="btn-knowmore"
+            >Learn more about working here</a
+          >
         </h5>
       </div>
     </div>
+    <Popup v-if="showModal" @close="showModal = !showModal"></Popup>
   </div>
 </template>
 
 <script>
+import Popup from '~/components/Popup'
 export default {
-  name: 'CareerSection'
+  name: 'CareerSection',
+  components: {
+    Popup
+  },
+  data() {
+    return {
+      showModal: true
+    }
+  }
 }
 </script>
 

@@ -1,67 +1,70 @@
 <template>
-  <div class="popup_box p-8">
-    <div class="popup_wrap">
-      <button class="close">X</button>
-      <div class="popup_content">
-        <h2 class="text-4xl text-center mb-8">About Working Here</h2>
-        <p class="text-2xl mb-8">
-          We like to find solutions to hard problems. We like a world where the
-          good guys win. We are looking for creative, collaborative, passionate
-          people interested in making enterprise network security better.
-        </p>
-        <div class="row flex flex-wrap">
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <div class="benefit-block">
-              <figure>
-                <img src="../assets/icon1.png" alt="benefits" />
-              </figure>
-              <h5>WORKING CULTURE</h5>
-              <p>
-                We believe that productivity is a result of work mixed with the
-                love for the work.
-              </p>
+  <transition name="slide-fade">
+    <div class="popup_box p-8">
+      <div class="popup_wrap">
+        <button class="close" @click="$emit('close')">X</button>
+        <div class="popup_content">
+          <h2 class="text-4xl text-center mb-8">About Working Here</h2>
+          <p class="text-2xl mb-8">
+            We like to find solutions to hard problems. We like a world where
+            the good guys win. We are looking for creative, collaborative,
+            passionate people interested in making enterprise network security
+            better.
+          </p>
+          <div class="row flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+              <div class="benefit-block">
+                <figure>
+                  <img src="../assets/icon1.png" alt="benefits" />
+                </figure>
+                <h5>WORKING CULTURE</h5>
+                <p>
+                  We believe that productivity is a result of work mixed with
+                  the love for the work.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <div class="benefit-block">
-              <figure>
-                <img src="../assets/icon2.png" alt="benefits" />
-              </figure>
-              <h5>WORKING CULTURE</h5>
-              <p>
-                We believe that productivity is a result of work mixed with the
-                love for the work.
-              </p>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+              <div class="benefit-block">
+                <figure>
+                  <img src="../assets/icon2.png" alt="benefits" />
+                </figure>
+                <h5>WORKING CULTURE</h5>
+                <p>
+                  We believe that productivity is a result of work mixed with
+                  the love for the work.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <div class="benefit-block">
-              <figure>
-                <img src="../assets/icon3.png" alt="benefits" />
-              </figure>
-              <h5>WORKING CULTURE</h5>
-              <p>
-                We believe that productivity is a result of work mixed with the
-                love for the work.
-              </p>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+              <div class="benefit-block">
+                <figure>
+                  <img src="../assets/icon3.png" alt="benefits" />
+                </figure>
+                <h5>WORKING CULTURE</h5>
+                <p>
+                  We believe that productivity is a result of work mixed with
+                  the love for the work.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <div class="benefit-block">
-              <figure>
-                <img src="../assets/icon4.png" alt="benefits" />
-              </figure>
-              <h5>WORKING CULTURE</h5>
-              <p>
-                We believe that productivity is a result of work mixed with the
-                love for the work.
-              </p>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+              <div class="benefit-block">
+                <figure>
+                  <img src="../assets/icon4.png" alt="benefits" />
+                </figure>
+                <h5>WORKING CULTURE</h5>
+                <p>
+                  We believe that productivity is a result of work mixed with
+                  the love for the work.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -109,5 +112,16 @@ export default {
 }
 .benefit-block h5 {
   @apply text-3xl mb-10 text-center;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(500px);
+  opacity: 0;
 }
 </style>

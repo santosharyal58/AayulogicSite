@@ -11,9 +11,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_4d9ce59e from 'nuxt_plugin_workbox_4d9ce59e' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_88d85cf4 from 'nuxt_plugin_nuxticons_88d85cf4' // Source: ./nuxt-icons.js (mode: 'all')
-import nuxt_plugin_axios_145aadfc from 'nuxt_plugin_axios_145aadfc' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_workbox_7cb1b9cc from 'nuxt_plugin_workbox_7cb1b9cc' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_b71932d0 from 'nuxt_plugin_nuxticons_b71932d0' // Source: .\\nuxt-icons.js (mode: 'all')
+import nuxt_plugin_axios_fa6a9ea0 from 'nuxt_plugin_axios_fa6a9ea0' // Source: .\\axios.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -147,16 +147,16 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_4d9ce59e === 'function') {
-    await nuxt_plugin_workbox_4d9ce59e(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_7cb1b9cc === 'function') {
+    await nuxt_plugin_workbox_7cb1b9cc(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_88d85cf4 === 'function') {
-    await nuxt_plugin_nuxticons_88d85cf4(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_b71932d0 === 'function') {
+    await nuxt_plugin_nuxticons_b71932d0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_145aadfc === 'function') {
-    await nuxt_plugin_axios_145aadfc(app.context, inject)
+  if (typeof nuxt_plugin_axios_fa6a9ea0 === 'function') {
+    await nuxt_plugin_axios_fa6a9ea0(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

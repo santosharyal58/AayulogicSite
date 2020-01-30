@@ -23,8 +23,9 @@
       </button>
       <nav class="header-nav">
         <ul
-          :class="isOpen ? 'block' : 'hidden'"
           class="navmenu text-black flex flex-wrap"
+          v-if="!isOpen"
+          @close="isOpen = false"
         >
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutus">About Us</a></li>
@@ -47,7 +48,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      isOpen: true
+      isOpen: false
     }
   },
   mounted() {
@@ -61,9 +62,10 @@ export default {
 </script>
 
 <style>
-.header {
+/* .header {
   transition: all 0.4s ease-in-out;
-}
+} */
+
 .header .container {
   /* margin: 0 auto;
   max-width: 1140px; */
@@ -73,15 +75,15 @@ export default {
   text-align: center;
   flex-wrap: wrap;
 }
-/* .scrolled {
+.scrolled {
   @apply bg-white;
-} */
-/* .scrolled .navbar-brand svg {
+}
+.scrolled .navbar-brand svg {
   @apply text-activecolor;
-} */
-/* .scrolled .navmenu li a {
+}
+.scrolled .navmenu li a {
   @apply text-titlecolor;
-} */
+}
 .navmenu li {
   @apply ml-4;
 }
