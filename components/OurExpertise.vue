@@ -1,6 +1,8 @@
 <template>
-  <div class="our-expertise pt-40 pb-20 xs:pt-20">
-    <h2 class="text-center text-titlecolor md:text-5xl sm:text-4xl mb-20">
+  <div class="our-expertise pt-40 pb-20 xs:pt-20 text-center">
+    <h2
+      class="inline-block text-center text-titlecolor md:text-5xl sm:text-4xl mb-20"
+    >
       Our Expertise
     </h2>
     <div class="container">

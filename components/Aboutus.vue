@@ -6,9 +6,9 @@
         <div
           class="aboutus-text text-right px-4 sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2"
         >
-          <h2 class="pr-40 text-right text-textcolor text-2xl">
+          <h3 class="pr-40 text-right text-textcolor text-2xl">
             About Us
-          </h2>
+          </h3>
           <h4 class="mt-6 pr-40 text-titlecolor">
             We are good at what we do.
           </h4>

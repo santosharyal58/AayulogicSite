@@ -60,6 +60,9 @@ module.exports = {
       inset: {
         '25': '25rem'
       }
+    },
+    fontFamily: {
+      sans: ['Poppins', 'Sans-serif']
     }
   },
 

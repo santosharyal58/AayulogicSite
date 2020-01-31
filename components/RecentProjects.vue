@@ -8,11 +8,11 @@
         class="about-hrsoft flex flex-wrap"
       >
         <div
-          class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
+          class="featured-project-l w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
         >
-          <h2 class="mb-12 text-left text-white text-2xl">
+          <h3 class="mb-12 text-left text-white text-2xl">
             Featured Project
-          </h2>
+          </h3>
           <figure class="product-img max-w-quarter mb-8">
             <img src="../assets/realhrsoft-main.svg" alt="realhrsoft" />
           </figure>
@@ -24,10 +24,15 @@
           </p>
         </div>
         <div
-          class="feature w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
+          class="featured-project-r w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6"
         >
           <figure class="product-img">
-            <img itemprop="image" src="../assets/Group 4.png" alt="hrsoft" />
+            <img
+              itemprop="image"
+              loading="lazy"
+              src="../assets/Group 4.png"
+              alt="hrsoft"
+            />
           </figure>
         </div>
       </div>
@@ -50,6 +55,7 @@ export default {
   background: url('../assets/newbanner.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .projects-section .section-title h2 {
   @apply text-white;

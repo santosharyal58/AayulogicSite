@@ -8,12 +8,12 @@
       </div>
       <div class="footer-links w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
         <ul class="linkslist flex">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Client</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Career</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#features">Services</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
         </ul>
       </div>
       <ul

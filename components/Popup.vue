@@ -6,7 +6,7 @@
           Close
         </button>
         <div class="popup_content">
-          <h2 class="text-4xl text-center mb-8">About Working Here</h2>
+          <h3 class="text-4xl text-center mb-8">About Working Here</h3>
           <p class="text-2xl mb-8">
             We like to find solutions to hard problems. We like a world where
             the good guys win. We are looking for creative, collaborative,

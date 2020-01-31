@@ -1,12 +1,12 @@
 <template>
-  <div class="hero-banner relative min-h-screen overflow-hidden">
+  <div id="top" class="hero-banner relative min-h-screen overflow-hidden">
     <div class="banner-image absolute w-full h-full">
-      <img src="../assets/bglatest.png" alt="aayulogic" />
+      <img src="../assets/aayulogic-banner.png" alt="aayulogic" />
     </div>
     <div class="banner-content absolute inset-0 flex jusify-start items-center">
       <div class="container">
         <div class="content-wrap w-full text-white max-w-7">
-          <h1 class="md:text-6xl capitalize mb-16">
+          <h1 class="md:text-6xl capitalize mb-32">
             <span class="text-activecolor md:text-6xl font-semibold"
               >Create Awesome Things</span
             >
@@ -15,7 +15,7 @@
           <div class="product-developed">
             <h6 class="text-2xl">Our Recent Projects</h6>
             <div class="icons-holder mt-8">
-              <a href="https://realhr.com/"
+              <a href="https://realhrsoft.com/"
                 ><img
                   class="w-64"
                   src="../assets/realhrsoft.svg"

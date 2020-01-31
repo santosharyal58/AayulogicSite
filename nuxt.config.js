@@ -15,7 +15,11 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '~/assets/favicon-96x96.png'
+      },
       {
         rel: 'stylesheet',
         href:
@@ -25,10 +29,10 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap'
-      },{
+      },
+      {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Poppins&display=swap'
+        href: 'https://fonts.googleapis.com/css?family=Poppins&display=swap'
       }
     ]
   },

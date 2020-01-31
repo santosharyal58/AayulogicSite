@@ -2,7 +2,9 @@
   <div id="home" class="header fixed w-full z-30 py-8">
     <div class="container w-full">
       <div class="navbar-brand max-w-fifteen">
-        <img src="../assets/aayulogic-main.svg" alt="aayulogic" />
+        <a href="https://aayulogic.com"
+          ><img src="../assets/aayulogic-main.svg" alt="aayulogic"
+        /></a>
       </div>
       <button class="toggleBtn cursor-pointer" @click="isOpen = !isOpen">
         <svg
@@ -26,7 +28,7 @@
           class="navmenu text-black flex flex-wrap"
           :class="isOpen ? 'block' : 'hidden'"
         >
-          <li><a href="#home">Home</a></li>
+          <li><a href="#top">Home</a></li>
           <li><a href="#aboutus">About Us</a></li>
           <li><a href="#features">Services</a></li>
           <li><a href="#clients">Clients</a></li>
@@ -40,9 +42,6 @@
 </template>
 
 <script>
-// for sticky header
-
-// end
 export default {
   name: 'Header',
   data() {
@@ -53,7 +52,7 @@ export default {
   mounted() {
     window.onscroll = () => {
       const header = document.querySelector('#home')
-      if (this.scrollY <= 100) header.className = ''
+      if (this.scrollY >= 100) header.className = ''
       else header.classList.add('scrolled')
     }
   }
@@ -62,14 +61,11 @@ export default {
 
 <style>
 .header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
+  @apply flex flex-wrap justify-between items-center text-center;
 }
 .header {
   @apply bg-white;
+  box-shadow: 0 0 15px 0 #6c757d;
 }
 .collapsed-nav .navmenu {
   @apply flex;
@@ -78,17 +74,17 @@ export default {
   @apply ml-4;
 }
 .navmenu li a {
-  @apply inline-block text-1.6 text-titlecolor;
-  font-family: 'Poppins', sans-serif;
+  @apply inline-block font-sans text-1.6 text-titlecolor;
 }
-.navmenu li a:hover {
+.navmenu li a:hover,
+.navmenu li a:focus {
   @apply text-activecolor;
 }
 .navbar-brand img {
   @apply block w-full;
 }
 .toggleBtn {
-  @apply w-8 h-8 -mt-3;
+  @apply w-8 h-8 -mt-3 cursor-pointer;
 }
 .toggleBtn svg {
   @apply text-activecolor;
@@ -99,7 +95,6 @@ export default {
   }
   .header-nav {
     @apply w-full z-10;
-    transition: all 0.4s ease-in-out;
   }
   .header-nav ul li {
     @apply w-full bg-bgsecondary  py-4 m-0;
@@ -112,7 +107,7 @@ export default {
     @apply text-titlecolor text-2xl;
   }
   .collapsed-nav .navmenu {
-    display: none;
+    @apply hidden;
   }
   h1 {
     @apply text-5xl;

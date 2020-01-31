@@ -1,5 +1,5 @@
 <template>
-  <div class="career-sec pb-20">
+  <div id="career" class="career-sec pb-20">
     <div class="joinus-banner bg-bgsecondary py-20">
       <div class="container joinus-text text-center">
         <div class=" text-center mb-16">
