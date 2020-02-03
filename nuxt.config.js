@@ -4,7 +4,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Aayulogic | Expand Productivity',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,17 +18,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '~/assets/favicon-96x96.png'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swapavicon.ico'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap'
+        href: '/favicon.ico'
       },
       {
         rel: 'stylesheet',

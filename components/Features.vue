@@ -59,49 +59,49 @@ export default {
           icon: this.$options.icons.uniChartPieAlt,
           title: 'Business Applications',
           content:
-            'Awesome user experience and analytical overview of your business data to make excellent decisions.'
+            'Awesome user experience and analytical overview of your business data'
         },
         {
           icon: this.$options.icons.uniChartLine,
           title: 'Enterprise Solutions',
           content:
-            'Build customized CMS and dashboard applications tailored to fit your business.'
+            'Build customized CMS and dashboard applications tailored to fit your business'
         },
         {
           icon: this.$options.icons.uniGlobe,
           title: 'Web Applications',
           content:
-            'We enjoy working with Python, PHP, Node.js, on the back-end and AngularJS, jQuery, HTML5 on the front-end.'
+            'Python, PHP, Node.js, on the back-end and Vue, Angular, jQuery and HTML5'
         },
         {
           icon: this.$options.icons.uniMobileAndroid,
           title: 'Mobile Applications',
           content:
-            'Build customized Development of both native and hybrid apps for iOS, and Android with intuitive and easy-to-use UI/UX. and dashboard applications tailored to fit your business.'
+            'Build customized native and hybrid apps for iOS, and Android'
         },
         {
           icon: this.$options.icons.uniPalette,
           title: 'UI/UX',
           content:
-            'We believe in creating seamless user experience and visually appealing user interface.'
+            'Creating seamless user experience and visually appealing user interface'
         },
         {
           icon: this.$options.icons.uniDocumentLayoutLeft,
           title: 'CMS',
           content:
-            'Build customized CMS Including, but not limited to Wordpress, Drupal,Joomla and custom solutions for special requirements. dashboard applications tailored to fit your business.'
+            'Build customized CMS but not limited with WordPress, Drupal and Joomla'
         },
         {
           icon: this.$options.icons.uniShoppingTrolley,
           title: 'E-Commerce',
           content:
-            "Magento, X-Cart, Opencart, Shopify and custom e-commerce sotware. You focus on sale, we'll take care of the technology."
+            'Magento, X-Cart, OpenCart, Shopify and custom e-commerce software'
         },
         {
           icon: this.$options.icons.uniApps,
           title: 'Management Systems',
           content:
-            'HRIS, Attendance, Payroll, CRM.Analytical data at your fingertips to help you make the best decision.'
+            'HRIS, Attendance, Payroll, CRM, Analytical data at your fingertips'
         },
         {
           icon: this.$options.icons.uniServerConnection,

@@ -2,7 +2,7 @@
   <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1-2 mb-12 px-6">
     <h4>Drop us a Line</h4>
     <form
-      action="https://formspree.io/mvoagpvv"
+      action="https://formspree.io/mqkpnrda"
       method="POST"
       class="bg-white pt-6 pb-8 mb-4 max-w-half"
     >
@@ -34,7 +34,7 @@
         </label>
         <input
           class="appearance-none border rounded w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          type="number"
+          type="tel"
           name="contactno"
           placeholder="Phone Number"
         />
@@ -53,7 +53,7 @@
       </div>
       <div class="flex items-center justify-between">
         <button
-          class="bg-activecolor text-white font-bold py-4 text-2xl px-6 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+          class="bg-activecolor text-white py-4 text-2xl px-6 hover:bg-blue-700 focus:outline-none focus:shadow-outline"
           type="submit"
         >
           Send Now
@@ -71,6 +71,10 @@ export default {
 
 <style>
 label {
+  @apply text-2xl;
+}
+input,
+textarea {
   @apply text-2xl;
 }
 </style>

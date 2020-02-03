@@ -45,8 +45,8 @@
                 </figure>
                 <h5>HEALTH BENEFITS</h5>
                 <p>
-                  We treasure our employees and value their contribution in the
-                  achievement of overall company objectives.
+                  Safe and healthy working environment is very important for
+                  every individual in an organization.
                 </p>
               </div>
             </div>

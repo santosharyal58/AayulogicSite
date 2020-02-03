@@ -58,7 +58,7 @@ p {
 }
 input::placeholder,
 textarea::placeholder {
-  @apply text-gray-600 text-xl;
+  @apply text-gray-600 text-2xl;
 }
 .container {
   @apply mx-auto;
@@ -105,6 +105,9 @@ textarea::placeholder {
   .social-list {
     @apply justify-center;
   }
+  .copyright p {
+    text-align: center;
+  }
 }
 @media (max-width: 639px) {
   /* banner */
@@ -134,10 +137,9 @@ textarea::placeholder {
   .footer-brand figure {
     @apply mx-auto mb-8;
   }
-  .copyright p {
-    text-align: center;
+  .product-btn {
+    @apply mx-auto;
   }
-
   /* what we do */
   .feature-text p {
     @apply text-2xl;

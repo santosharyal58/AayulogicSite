@@ -71,7 +71,7 @@ export default {
   @apply flex;
 }
 .navmenu li {
-  @apply ml-4;
+  @apply ml-8;
 }
 .navmenu li a {
   @apply inline-block font-sans text-1.6 text-titlecolor;
@@ -101,6 +101,7 @@ export default {
   }
   .header-nav ul {
     @apply absolute left-0 right-0 w-full h-auto;
+    box-shadow: 0 4px 4px -2px #ebebeb;
     top: 7rem;
   }
   .header-nav ul li a {

@@ -16,10 +16,11 @@
         <div class="aboutus-img sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/2">
           <!-- <img src="../assets/about-img.png" alt="aayulogic" /> -->
           <p class="max-w-half text-titlecolor">
-            We're a team of passionate people who make use of excellent
-            technology for the simplification of our client's business needs. We
-            provide software solutions including, but not limited to, web
-            development, web desigining, web/domain hosting, cms etc.
+            We're a team of system architects, data strategists, creatives and
+            developers that take pride in crafting digital products that help
+            businesses to transform and grow. We provide software solutions
+            including, but not limited to, web development, web desigining,
+            web/domain hosting, cms etc.
           </p>
         </div>
       </div>
